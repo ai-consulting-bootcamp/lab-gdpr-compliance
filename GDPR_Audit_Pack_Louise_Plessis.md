@@ -5,6 +5,7 @@
 **Course:** AI Consulting Bootcamp\
 **Lab:** Same product, privacy lens\
 **Author:** Louise Plessis\
+**Partner:** Mudit\
 **Date:** 18 August 2026
 
 > **Scope note:** This is a first-pass GDPR audit for the agreed
@@ -25,22 +26,26 @@ the EU AI Act exercise. The system ranks incoming resumes and cover
 letters for entry-level analyst roles and automatically rejects the
 bottom 60% of applicants. It also uses application material and
 video-based inputs to assess candidate suitability, including a "culture
-fit" component. Under the EU AI Act, the system was classified as
-**high-risk** because it is used to evaluate and select candidates in
-recruitment. It is particularly relevant for GDPR analysis because the
-system processes extensive applicant personal data, creates inferred
-scores about individuals, and uses those scores in a decision that can
-materially affect access to employment.
+fit" component.
+
+Under the EU AI Act, the system was classified as **high-risk** because
+it is used to evaluate and select candidates in recruitment. It is
+particularly relevant for GDPR analysis because the system processes
+extensive applicant personal data, creates inferred scores about
+individuals, and uses those scores in a decision that can materially
+affect access to employment.
 
 ### Fact pattern
 
 The client is a **regional bank with increased hiring volume** that
 wants to automate part of its recruitment process for entry-level
 analyst roles. Applicants are assumed to include **EU/EEA-based
-candidates**. The system processes names and contact details, resumes,
-cover letters, education and employment history, application answers,
-and candidate video material. It also creates inferred information such
-as candidate scores, rankings, and a "culture fit" assessment.
+candidates**.
+
+The system processes names and contact details, resumes, cover letters,
+education and employment history, application answers, and candidate
+video material. It also creates inferred information such as candidate
+scores, rankings, and a "culture fit" assessment.
 
 The bank uses these data to evaluate applications, rank candidates, and
 automatically reject the bottom 60% before recruiters review the
@@ -59,7 +64,7 @@ characteristics can be revealed or inferred, particularly through
 free-text applications and video. However, the scenario does not
 establish that the system intentionally processes biometric data for
 unique identification or intentionally infers Article 9 characteristics.
-This therefore requires technical verification rather than assumption.
+This requires technical verification rather than assumption.
 
 The most significant GDPR issue is the **automatic rejection of
 applicants**. Rejection from a recruitment process can have a similarly
@@ -75,7 +80,7 @@ remain.
 ## Section A --- Data map
 
   -----------------------------------------------------------------------
-  Field                               Your answer
+  Field                               Answer
   ----------------------------------- -----------------------------------
   **Categories of personal data**     Identity/contact data; CV and
                                       cover-letter content; education and
@@ -94,8 +99,8 @@ remain.
                                       through the recruitment process.
                                       Potentially recruitment/HR systems
                                       already operated by the bank. No
-                                      additional external datasets should
-                                      be assumed without confirmation.
+                                      additional external datasets are
+                                      assumed without confirmation.
 
   **Purpose 1**                       Receive and administer applications
                                       for analyst roles.
@@ -191,8 +196,8 @@ processing, it should complete the three-part LIA:
     rights and reasonable expectations, considering the power imbalance
     and consequences of recruitment decisions?
 
-Until that analysis is complete, the relevant basis should remain **TBD
---- legal review**.
+Until that analysis is complete, the relevant basis remains **TBD ---
+legal review**.
 
 ------------------------------------------------------------------------
 
@@ -203,13 +208,11 @@ Until that analysis is complete, the relevant basis should remain **TBD
 Special-category data are **not necessarily part of the intended
 input**, but they could appear in cover letters, CVs, or video---for
 example information revealing health, religion, ethnicity, political
-views, trade-union membership, or sexual orientation. Video footage
-itself is not automatically Article 9 biometric data; biometric data
-becomes a special category under Article 9 when processed for the
-purpose of uniquely identifying a person.
+views, trade-union membership, or sexual orientation.
 
-The bank should test what the "culture fit" feature actually infers. If
-it intentionally derives Article 9 characteristics, the bank would need
+Video footage itself is not automatically Article 9 biometric data. The
+bank should test what the "culture fit" feature actually infers. If it
+intentionally derives Article 9 characteristics, the bank would need
 both an Article 6 lawful basis and an applicable Article 9 condition. If
 no valid condition exists, that processing should not proceed.
 
@@ -217,16 +220,18 @@ no valid condition exists, that processing should not proceed.
 
 **Article 22 is a major concern.** The bottom 60% of candidates are
 automatically rejected based on the AI ranking, and rejection from a
-recruitment process can similarly significantly affect an applicant.
+recruitment process can significantly affect an applicant.
 
 The fact that recruiters subsequently review the remaining 40% does
 **not** provide human intervention for applicants who have already been
-rejected. Before deploying this design, the bank should either establish
-that the automated decision falls within a valid Article 22 exception
-together with the required safeguards, or redesign the process so that a
-person conducts meaningful review **before** rejection. Human review
-must be capable of changing the outcome rather than functioning as a
-rubber stamp.
+rejected.
+
+Before deploying this design, the bank should either establish that the
+automated decision falls within a valid Article 22 exception together
+with the required safeguards, or redesign the process so that a person
+conducts meaningful review **before** rejection. Human review must be
+capable of changing the outcome rather than functioning as a rubber
+stamp.
 
 ### 3. DPIA requirement
 
@@ -246,9 +251,8 @@ criteria are implicated:
 -   **Vulnerable data subjects / power imbalance:** relevant in the
     employment context.
 -   **Innovative technology:** yes --- AI-based applicant assessment.
--   **Processing preventing access to a service/contract/opportunity:**
-    relevant because the system determines progression toward
-    employment.
+-   **Processing preventing access to an opportunity:** relevant because
+    the system determines progression toward employment.
 
 This is well beyond a borderline screening case. The bank should
 complete the DPIA before first production processing and use it to
@@ -264,13 +268,12 @@ outcomes.
 
 **Erasure:** The bank needs a defined process for deleting application
 material, video, inferred scores, and vendor-held copies when erasure
-applies. Retention in model/vector/logging infrastructure must be
+applies. Retention in model, logging, or other infrastructure must be
 included in the deletion design.
 
 **Objection/profiling:** Where processing relies on legitimate interests
 and constitutes profiling, applicants may object. The bank needs an
-operational route for receiving and evaluating objections rather than
-treating model processing as irreversible.
+operational route for receiving and evaluating objections.
 
 **Automated-decision safeguards:** Where Article 22 applies and an
 exception permits the processing, appropriate safeguards include the
@@ -290,14 +293,14 @@ contest the decision.
                                                      part of recruitment.
 
   **Recruitment/AI        **Likely processor if      Processes applicant
-  vendor**                operating the system on    data to provide the
-                          the bank's documented      screening/ranking
-                          instructions**             service. If the vendor
+  vendor**                operating on the bank's    data to provide the
+                          documented instructions**  screening/ranking
+                                                     service. If it
                                                      independently
                                                      determines purposes for
                                                      some processing, its
-                                                     role would need
-                                                     separate assessment.
+                                                     role requires separate
+                                                     assessment.
 
   **Model/API provider**  **Processor or             Performs model
                           subprocessor where it      inference or related
@@ -308,18 +311,17 @@ contest the decision.
   **Cloud/hosting         **Processor/subprocessor   Provides infrastructure
   provider**              where it stores or         rather than determining
                           processes applicant data   the recruitment
-                          for the controller/service purpose.
-                          provider**                 
+                          for the service**          purpose.
   --------------------------------------------------------------------------
 
-The bank remains responsible for its own controller obligations even
-when the scoring technology is supplied by a vendor.
+The bank remains responsible for its controller obligations even when
+the scoring technology is supplied by a vendor.
 
 ### 6. DPAs
 
 **Yes.** Article 28 DPAs are required with entities that act as
 processors on the bank's behalf. The bank should identify the full
-processing chain---including subprocessors---and verify instructions,
+processing chain, including subprocessors, and verify instructions,
 confidentiality, security, assistance with data-subject rights,
 deletion/return of data, audit rights, and subprocessor conditions.
 
@@ -332,11 +334,10 @@ exist is **TBD --- legal review**.
 
 **AI Act cross-check:** The recruitment system is **high-risk** because
 it is intended to evaluate/select candidates for employment. The AI Act
-adds system-specific obligations around areas such as risk management,
-data governance, documentation/logging, transparency,
-accuracy/robustness, and human oversight; GDPR simultaneously governs
-the processing of applicant personal data. The two regimes therefore
-apply in parallel rather than one replacing the other.
+adds system-specific obligations around risk management, data
+governance, documentation/logging, transparency, accuracy/robustness,
+and human oversight. GDPR simultaneously governs the processing of
+applicant personal data. The regimes therefore apply in parallel.
 
 **ePrivacy check:** **N/A on the current fact pattern.** No cookies,
 tracking pixels, or device-level tracking are described. If the
@@ -344,8 +345,7 @@ recruitment portal later adds non-essential tracking technologies,
 ePrivacy requirements would need a separate assessment.
 
 **Data Act check:** **N/A on the current fact pattern.** The system does
-not involve connected-product/IoT data. No Data Act issue should be
-invented simply because cloud infrastructure may be used.
+not involve connected-product or IoT data.
 
 ------------------------------------------------------------------------
 
@@ -366,14 +366,14 @@ Article 22, and warrants a DPIA before deployment.
 
 I recommend three actions in sequence.
 
-**1. Redesign the rejection step before launch.** The strongest product
-change is to use the AI ranking as decision support rather than allowing
-the model alone to reject applicants. A trained recruiter should
-meaningfully review candidates before rejection, have access to relevant
-information beyond the model score, and have genuine authority to
-override the recommendation. If the bank wants to retain solely
-automated rejection, legal counsel must first establish that an Article
-22 exception applies and that all required safeguards are implemented.
+**1. Redesign the rejection step before launch.** Use AI ranking as
+decision support rather than allowing the model alone to reject
+applicants. A trained recruiter should meaningfully review candidates
+before rejection, have access to relevant information beyond the model
+score, and have genuine authority to override the recommendation. If the
+bank wants to retain solely automated rejection, legal counsel must
+first establish that an Article 22 exception applies and that all
+required safeguards are implemented.
 
 **2. Complete the GDPR assessment and data-governance design.** Conduct
 a DPIA covering scoring, ranking, video analysis, "culture fit," error
@@ -403,23 +403,105 @@ before deployment.
 
 ------------------------------------------------------------------------
 
-# Phase 4 --- Partner swap and peer review
+# Phase 4 --- Verify: Partner peer review
 
-> **To be completed by partner.**
+**Reviewer:** Mudit\
+**Status:** Simulated draft for partner confirmation
 
-  Criterion                                         Score 1--3 Comment
-  ----------------------------------------------- ------------ ---------
-  Clear bottom-line recommendation                             
-  Lawful basis selection is justified                          
-  Top actions are specific and sequenced                       
-  Residual risks are named honestly                            
-  Law stacking is addressed (AI Act / ePrivacy)                
+  ------------------------------------------------------------------------
+  Criterion                               Score 1--3 Comment
+  --------------------- ---------------------------- ---------------------
+  **Clear bottom-line                          **3** "Go with conditions"
+  recommendation**                                   is clear and directly
+                                                     connected to the main
+                                                     issue: automatic
+                                                     rejection without
+                                                     meaningful human
+                                                     review.
+
+  **Lawful basis                               **3** The audit does not
+  selection is                                       force a single lawful
+  justified**                                        basis across all
+                                                     recruitment
+                                                     processing and
+                                                     correctly flags
+                                                     unresolved points for
+                                                     legal review.
+
+  **Top actions are                            **3** Redesigning the
+  specific and                                       rejection step first,
+  sequenced**                                        completing the
+                                                     DPIA/legal analysis
+                                                     second, and
+                                                     addressing vendors
+                                                     and applicant rights
+                                                     third gives the
+                                                     client a practical
+                                                     order of action.
+
+  **Residual risks are                         **3** Bias, inaccurate
+  named honestly**                                   assessment, the
+                                                     validity of "culture
+                                                     fit," and human
+                                                     rubber-stamping
+                                                     remain credible risks
+                                                     even after
+                                                     mitigation.
+
+  **Law stacking is                            **3** The analysis clearly
+  addressed (AI Act /                                distinguishes GDPR
+  ePrivacy)**                                        from the AI Act
+                                                     high-risk
+                                                     requirements and
+                                                     correctly treats
+                                                     ePrivacy as not
+                                                     triggered by the
+                                                     facts currently
+                                                     provided.
+  ------------------------------------------------------------------------
 
 ### Client response
 
-*To be completed by partner in two to three sentences: accept the
-recommendation, challenge one finding, or request a redesign of one
-section.*
+The recommendation to proceed with conditions is convincing. My main
+concern is whether requiring human review of every candidate who would
+otherwise be automatically rejected removes too much of the efficiency
+benefit that motivated the system. I would ask the consultant to clarify
+how meaningful human review could be designed proportionately without
+simply recreating the entire manual screening process.
+
+------------------------------------------------------------------------
+
+# Phase 5 --- Debrief
+
+The two audits broadly agreed that AI-assisted recruitment requires
+particularly careful treatment of **lawful basis, DPIA requirements,
+profiling, and automated decision-making**. We also agreed that having a
+human somewhere in the recruitment process is not sufficient by itself:
+human oversight needs to occur at the relevant decision point and must
+be capable of changing the outcome.
+
+The main discussion point was **Article 22 and the automatic rejection
+step**. My assessment treats automatic rejection of the bottom 60% as
+the most significant GDPR issue because those candidates receive no
+human review before the negative decision. The client perspective raised
+a useful product challenge: reviewing every potentially rejected
+application could undermine the efficiency objective that motivated the
+AI system.
+
+We therefore considered a stronger middle ground. The AI can remain
+useful for **ranking and decision support**, but the process should
+introduce a proportionate human-review mechanism before final rejection.
+The reviewer should not simply approve the model's recommendation; they
+need enough information and authority to identify errors and reverse an
+outcome. The exact operational design could use structured review
+criteria or prioritised review of borderline cases, but it must preserve
+genuinely meaningful human involvement.
+
+The stronger reading is therefore not that AI screening must be
+abandoned. It is that **automation can assist recruitment without
+automatically becoming the final decision-maker**. This interpretation
+also aligns the GDPR analysis with the AI Act's emphasis on human
+oversight for high-risk recruitment systems.
 
 ------------------------------------------------------------------------
 
@@ -534,8 +616,15 @@ implemented.
 
 ------------------------------------------------------------------------
 
-# Submission note
+# Final recommendation
 
-The **partner peer-review section must remain completed by the actual
-partner**, because the lab explicitly requires a swap and client-style
-review. The rest of this document is ready for that review step.
+**GO WITH CONDITIONS.**
+
+The AI system can support recruitment, but the current design should not
+move into production unchanged. The priority is to address the automatic
+rejection mechanism, complete the DPIA and lawful-basis analysis, and
+establish the necessary applicant-rights and vendor controls.
+
+AI-assisted ranking can remain valuable, but the system should support
+human decision-making rather than silently becoming the final
+decision-maker for access to employment.
