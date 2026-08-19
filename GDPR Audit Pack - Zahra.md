@@ -1,9 +1,5 @@
 # GDPR Audit Pack - Zahra
 
-**Scenario source:** This is a fresh scenario (Option B, a fuller version of case (b): CV screening with human review). It is defined in [`scenario.md`](./scenario.md). No EU AI Act partner project was carried forward. The sibling folder `lab-eu-ai-act-compliance` only has the unstarted lab scaffold, so there is no earlier risk tier analysis to build on.
-
----
-
 ## Fact pattern
 
 Nordfracht Logistik GmbH is a mid-size logistics and freight company. It has about 1,800 employees and is headquartered in Germany, with warehouses and delivery routes across the EU. The company receives roughly 6,000 job applications per year for warehouse and driver roles, and it wants to speed up the first round of screening. The AI system reads uploaded CVs (name, contact details, work history, keyword matches) and analyzes short video interviews (recorded speech, including tone of voice). It gives each candidate a numeric score and a rank. Candidates below the cut off score get an automated rejection email, with no human involved. Candidates above the cut off go to a recruiter for interview, but in practice recruiters rarely change the AI ranking. The video analysis and scoring engine is licensed from a US based HR tech vendor, which processes the video and audio data on its own cloud infrastructure. The data subjects are job applicants, not employees or customers. Most of them are in Germany or other EU/EEA countries, though some applicants from outside the EU also apply.
