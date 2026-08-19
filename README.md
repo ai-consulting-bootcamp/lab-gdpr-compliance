@@ -1,23 +1,22 @@
-# Same product, privacy lens
+# GDPR Audit Lab — CV Screening & Ranking (Recruitment)
 
-**Track:** Module 7 — GDPR · **When:** Week 7, Day 3 · **Status:** Required
-
-This repository contains everything you need for this lab.
+This repository contains the complete deliverable for the "Same product, privacy lens" GDPR lab, carried forward from the EU AI Act lab's Case 2 (CV Screening and Ranking).
 
 ## Files
 
-- [`instructions.md`](./instructions.md) — the lab instructions
-- [`rubric.md`](./rubric.md) — how your submission is graded; this is what the AI reviewer checks your PR against
+- **`gdpr_audit_pack_CV_screening.md`** — The full audit pack, containing:
+  - **Part I — Audit Worksheet**: transition note from the AI Act lab, fact pattern, CFU 1 (Recognize) analysis, and the Phase 2 audit worksheet (Section A — Data Map, Section B — Risk and Rights, Section C — Law Stacking).
+  - **Phase 3 — Client Recommendation Memos**: two independently written memos, one from each auditor (Akansha Verma and Vincent de Paul), each with a bottom-line recommendation, top actions, and residual risks.
+  - **Phase 4 — Partner Swap and Peer Review**: two peer-review artifacts — a scored rubric (Vincent reviewing Akansha's memo) and a narrative verification record (Akansha reviewing Vincent's memo), including the challenge that led to a revision of Vincent's memo.
+  - **Phase 5 — Debrief**: points of agreement and divergence between the two audits, a dedicated lawful-basis discussion and DPIA discussion, reviewer comments on both memos, and a final debrief conclusion.
+  - **Reinforcement Notes**: a DPIA outline for the highest-risk processing activity, a recommended DPA clause, and an analysis of what changes if the client also serves UK data subjects.
+  - **Stretch**: a data protection by design checklist for the automated ranking activity, scored pass/fail/unknown.
 
-## How to complete this lab
+## Auditors
 
-1. **Fork** this repository.
-2. Do the work described in `instructions.md`, committing to your fork.
-3. Open a **pull request** back into this repository.
-4. You'll receive **AI feedback** on your PR based on `rubric.md`. Address any blocking feedback and push updates to the same PR.
+- Akansha Verma
+- Vincent de Paul
 
-## Submission hygiene
+## Scenario
 
-- Keep this repository scoped to this lab only — no unrelated projects or personal files.
-- Use clear, descriptive filenames.
-- Remove secrets, API keys, and tokens before committing.
+Case 2 — CV Screening and Ranking (Recruitment): a national recruitment company plans to deploy an AI system that analyses CVs, application answers, and professional information to rank candidates against vacancy requirements, with a recruiter reviewing the AI-generated shortlist before interview invitations are issued. Assessment results are intended to be retained across recruitment offices for reuse in future hiring campaigns.
