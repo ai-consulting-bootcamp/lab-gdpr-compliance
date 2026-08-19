@@ -29,7 +29,9 @@ This repository contains everything you need for this lab.
 | File | Contents |
 |---|---|
 | [`fact-pattern-cv-screening-shared.md`](./fact-pattern-cv-screening-shared.md) | The shared fact pattern agreed with my lab partner, plus the transition note explaining which EU AI Act case is carried forward and why |
-| [`gdpr-audit-pack-ugo-ahukannah.md`](./gdpr-audit-pack-ugo-ahukannah.md) | The audit pack: data map, risk and rights, law stacking, the client recommendation memo, peer review and debrief |
+| [`gdpr-audit-pack-ugo-ahukannah.md`](./gdpr-audit-pack-ugo-ahukannah.md) | **The lab working document**, in the two sections the setup requires — `Audit worksheet` (Recognize, then Sections A data map, B risk and rights, C law stacking) and `Client recommendation memo` — followed by the Phase 4 peer review and the CFU 5 debrief |
+| [`reinforce-ugo-ahukannah.md`](./reinforce-ugo-ahukannah.md) | Reinforce task: DPIA outline for the most sensitive processing, the one DPA clause I would insist on and why, and how the recommendation changes for UK data subjects |
+| [`stretch-data-protection-by-design-ugo-ahukannah.md`](./stretch-data-protection-by-design-ugo-ahukannah.md) | Stretch task: data protection by design checklist for the highest-risk processing activity, each item marked pass, fail or unknown |
 | [`from_vittal/GDPR-Audit-Pack-VittalNavale.md`](./from_vittal/GDPR-Audit-Pack-VittalNavale.md) | My lab partner's audit pack and memo, received for the Phase 4 swap |
 
 **Lab partner:** Vittal Navale. Scenario carried forward from the EU AI Act lab: retail CV screening,

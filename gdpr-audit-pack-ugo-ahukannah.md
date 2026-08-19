@@ -1,16 +1,34 @@
-# GDPR Audit Pack — Ugo Ahukannah
+# GDPR Audit Pack - Ugo Ahukannah
 
-**Scenario:** national retail chain, AI-assisted CV screening · shared fact pattern:
-[`fact-pattern-cv-screening-shared.md`](./fact-pattern-cv-screening-shared.md)
-**Carried forward from:** EU AI Act lab, high-risk case (Annex III(4), employment)
-**Partner:** Vittal · **Basis:** Regulation (EU) 2016/679 (GDPR), with AI Act and ePrivacy cross-checks
+**Lab:** Same product, privacy lens · **Partner:** Vittal Navale · **Basis:** Regulation (EU) 2016/679
+(GDPR), with EU AI Act and ePrivacy cross-checks
+**Scenario carried forward (Option A):** the retail CV screening case from the EU AI Act lab,
+classified there as high-risk, Annex III(4).
 
 > Consulting-level audit, not legal advice. Items marked **TBD — legal review** are flagged
 > deliberately rather than guessed.
 
+## Fact pattern (Phase 1)
+
+Agreed with my partner before either audit began; full version, including the transition note, in
+[`fact-pattern-cv-screening-shared.md`](./fact-pattern-cv-screening-shared.md).
+
+A national retail chain (~15,000 employees across EU/EEA stores and distribution warehouses) has a
+two-person HR team receiving roughly 400 CVs a week for store and warehouse roles. It is piloting an
+AI CV screening tool, licensed from a **US-based HR-tech vendor**, that ingests each resume plus a
+short online skills assessment and scores the candidate against the job description, sorting them
+into "strong fit", "maybe" or "not a fit". Recruiters open only the "strong fit" folder; "not a fit"
+candidates receive an automated rejection email with **no confirmed human review step**. The model
+was trained on five years of the chain's own hiring and retention data. Data subjects are job
+applicants located in the **EU/EEA**; the vendor **processes and stores assessment and scoring data
+on US infrastructure**. HR wants to launch within six weeks and has not decided whether a recruiter
+must review "not a fit" outcomes before rejection is sent.
+
 ---
 
-## 1. Recognize — what is actually in the data
+# Audit worksheet
+
+## CFU 1 — Recognize: what is actually in the data
 
 **Categories present:** identity and contact data; full unstructured CV text (education,
 employment history, references, and commonly a photograph, nationality, languages and personal
@@ -32,7 +50,7 @@ incidental support-access edge case. Every CV screened crosses the border.
 
 ---
 
-## 2. Apply — audit worksheet
+## CFU 2 — Apply: the worksheet (Phase 2)
 
 ### Section A — Data map
 
@@ -138,7 +156,12 @@ chain later feeds in-store IoT or workforce-device telemetry into the same stack
 
 ---
 
-## 3. Integrate — client recommendation memo
+
+---
+
+# Client recommendation memo
+
+_Phase 3 · CFU 3 Integrate. 300–400 words as the lab requires._
 
 **To:** Retail chain — Legal and CTO · **From:** Ugo Ahukannah · **Re:** CV screening tool, privacy assessment
 
@@ -182,7 +205,12 @@ _(memo body: 399 words — lab requires 300–400)_
 
 ---
 
-## 4. Verify — peer review exchange
+
+---
+
+# Phase 4 — Partner swap and peer review
+
+_CFU 4 Verify._
 
 **My review of Vittal's memo** (his pack: [`from_vittal/GDPR-Audit-Pack-VittalNavale.md`](./from_vittal/GDPR-Audit-Pack-VittalNavale.md)):
 
@@ -204,7 +232,7 @@ reasoning per jurisdiction before we can adopt a single figure.
 
 **Vittal's review of my memo:** _pending._
 
-## 5. Debrief — agreement and divergence
+# CFU 5 — Debrief: agreement and divergence
 
 Both audits were written independently against the same agreed fact pattern.
 
