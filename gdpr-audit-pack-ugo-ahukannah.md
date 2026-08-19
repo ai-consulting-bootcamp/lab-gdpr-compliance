@@ -1,6 +1,6 @@
 # GDPR Audit Pack — Ugo Ahukannah
 
-**Scenario:** Vandermeer Retail CV screening · shared fact pattern:
+**Scenario:** national retail chain, AI-assisted CV screening · shared fact pattern:
 [`fact-pattern-cv-screening-shared.md`](./fact-pattern-cv-screening-shared.md)
 **Carried forward from:** EU AI Act lab, high-risk case (Annex III(4), employment)
 **Partner:** Vittal · **Basis:** Regulation (EU) 2016/679 (GDPR), with AI Act and ePrivacy cross-checks
@@ -25,10 +25,10 @@ such data sits in the file — it is that the **model may use proxies for it** w
 converts an incidental disclosure into a discriminatory decision. Treat Article 9 as engaged for
 risk purposes and assume no comfortable Article 9(2) exception exists.
 
-**Border crossing:** yes. Data is hosted in the EU, but the vendor's **US parent performs
-second-line support and model monitoring**, and remote access from the US to EU-stored personal
-data is itself a restricted transfer under Chapter V. This is the transfer that clients most often
-miss, because nothing is "sent" anywhere.
+**Border crossing:** yes, and not marginally. The vendor is **US-based and processes and stores
+assessment and scoring data on US infrastructure**, so applicant data leaves the EEA at the point
+it reaches the vendor — this is a Chapter V restricted transfer on the main processing path, not an
+incidental support-access edge case. Every CV screened crosses the border.
 
 ---
 
@@ -45,12 +45,12 @@ miss, because nothing is "sent" anywhere.
 | **Purpose 3 — training and improving the model on five years of historical hiring and retention outcomes** | **TBD — legal review.** Provisionally Art 6(1)(f), but this is a *secondary* purpose: the data was collected to fill past vacancies, not to build a model. Requires a compatibility assessment under **Art 6(4)** before it can proceed on legitimate interests, and the retention-outcome data concerns employees, where power imbalance makes consent unusable |
 | **Purpose 4 — retaining unsuccessful applications for future vacancies (talent pool)** | Lawful basis: **Art 6(1)(a)**, consent. Justification: keeping a CV past the vacancy it was submitted for serves the employer, not the applicant, and consent here is genuinely optional and refusable |
 | **Purpose 5 — defending discrimination or employment claims** | Lawful basis: **Art 6(1)(f)**, legitimate interests, or **Art 6(1)(c)** where national law imposes a limitation period. Drives the retention floor rather than the ceiling |
-| **Retention — P1/P2** | Application data and derived scores: **4 weeks after the procedure closes** (Dutch AP guidance), extendable to **1 year only with the applicant's consent**. Belgium follows comparable practice — confirm per jurisdiction |
+| **Retention — P1/P2** | Application data and derived scores: delete promptly after the procedure closes, retaining only where a documented claims-defence justification applies. **No single figure works EEA-wide** — supervisory expectations range from roughly 4 weeks by default (Dutch AP) to several months where discrimination-claim limitation periods justify it, so the chain needs a per-jurisdiction retention matrix rather than one number. Anything beyond the procedure itself needs either that justification or the applicant's consent |
 | **Retention — P3** | Training set retained for the life of the deployed model version, then deleted or irreversibly anonymised. Requires a version-linked deletion policy that does not currently exist |
 | **Retention — P4** | 1 year from consent, renewable only by fresh consent |
 | **Retention — logs** | ≥6 months of automatic logs are required by **AI Act Art 12** — see the stacking conflict in Section C |
-| **Recipients and sub-processors** | Kestrel HR Technologies (Ireland) — processor operating the screening tool; Kestrel's **US parent** — sub-processor providing second-line support and model monitoring; the chain's ATS and transactional email provider — processors delivering rejection notices |
-| **International transfers and mechanism** | US parent access to EU-stored candidate records = restricted transfer. Mechanism: **EU–US Data Privacy Framework** if and only if the US entity is certified *and* its certification covers **HR data**, which is a distinct DPF commitment; otherwise **SCCs plus a documented transfer impact assessment**. **TBD — legal review**: verify certification scope before launch rather than assuming the group's general certification suffices |
+| **Recipients and sub-processors** | The **US-based HR-tech vendor** — processor operating the screening tool and hosting the data; that vendor's own cloud and infrastructure sub-processors — **TBD — legal review**, the chain cannot assess the transfer chain without full sub-processor disclosure; internally, the two-person HR team and hiring recruiters; the chain's ATS and transactional email provider for delivering outcomes |
+| **International transfers and mechanism** | EEA → US on the main processing path: the vendor stores and processes assessment and scoring data on US infrastructure. Mechanism: **EU–US Data Privacy Framework** only if the vendor is certified *and* its certification covers **HR data**, which is a distinct DPF commitment rather than an automatic part of certification; otherwise **SCCs plus a documented transfer impact assessment** post-*Schrems II*. Sub-processor transfers need the same treatment. **TBD — legal review** — no mechanism is confirmed today, and nothing may flow until one is |
 
 **Legitimate interests assessment (Purpose 2), three steps:**
 *Purpose* — triage application volume the HR team demonstrably cannot process manually.
@@ -99,14 +99,15 @@ show compelling grounds, which is difficult mid-recruitment. *Rectification* of 
 is also likely, and there is currently no workflow for it.
 
 **5. Controller / processor split.**
-- **Vandermeer Retail — controller.** Decides that applicants will be screened, for what purpose, and on what data.
-- **Kestrel HR Technologies (IE) — processor** for the screening service. **Watch the boundary:** if Kestrel reuses client data to improve its own general-purpose model, it acts as a **controller** for that purpose and needs its own lawful basis. Either forbid it in the contract or document it properly; silence is the dangerous option.
-- **Kestrel's US parent — sub-processor**, engaged for second-line support and model monitoring, requiring Art 28(4) flow-down and its own transfer mechanism.
+- **The retail chain — controller.** Decides that applicants will be screened, for what purpose, and on what data.
+- **The US-based HR-tech vendor — processor** for the screening service. **Watch the boundary:** if the vendor reuses client data to improve its own product across other customers, it acts as an independent (or joint) **controller** for that purpose and needs its own lawful basis. Either forbid it in the contract or document it properly; silence is the dangerous option.
+- **The vendor's cloud and infrastructure providers — sub-processors**, requiring Art 28(4) authorisation and flow-down, and their own transfer treatment. The chain currently has no disclosure of who they are.
 - **ATS and email provider — processors** for delivery of outcomes.
 
-**6. DPAs required.** Article 28 DPA with **Kestrel**, with authorisation and flow-down for the US
-parent as sub-processor, plus the Chapter V transfer mechanism; DPAs with the **ATS** and **email
-provider**. No DPA is needed for the chain's own internal HR use — that is controller-side processing.
+**6. DPAs required.** Article 28 DPA with the **screening vendor** before any live candidate data
+reaches it, covering processing instructions, sub-processor authorisation and disclosure, security
+measures, and the Chapter V transfer terms; DPAs with the **ATS** and **email provider**. No DPA is
+needed for the chain's own internal HR use — that is controller-side processing.
 
 ### Section C — Law stacking
 
@@ -119,8 +120,9 @@ notified body for Annex III(4) — registration (Art 49), and post-market monito
 reporting on a 15/10/2-day clock (Arts 72–73). **No FRIA**: a private retailer hiring for itself is
 not a public body, not a private entity providing a public service, and not an Annex III 5(b)/(c)
 deployer. Two interactions worth naming: the AI Act's **Art 12 logging duty (≥6 months)** runs
-directly against GDPR's storage limitation and the 4-week Dutch retention norm, so logs must be
-scoped to what the AI Act requires and separated from the candidate record; and the Digital
+directly against GDPR's storage limitation and the short retention expected for unsuccessful
+applications, so logs must be scoped to what the AI Act requires and separated from the candidate
+record; and the Digital
 Omnibus's **new Art 4a** now provides a legal basis for processing special-category data for bias
 detection and correction, which removes the Article 9 obstacle that used to block exactly the
 fairness testing this system needs.
@@ -138,7 +140,7 @@ chain later feeds in-store IoT or workforce-device telemetry into the same stack
 
 ## 3. Integrate — client recommendation memo
 
-**To:** Vandermeer Retail — Legal and CTO · **From:** Ugo Ahukannah · **Re:** CV screening tool, privacy assessment
+**To:** Retail chain — Legal and CTO · **From:** Ugo Ahukannah · **Re:** CV screening tool, privacy assessment
 
 **Bottom line: go with conditions.** The tool is lawful to deploy, but not as currently
 configured for launch — the automated rejection step is the problem, and it is fixable.
@@ -158,11 +160,12 @@ of the ranking, not the top.
 2. **Complete a DPIA before first processing.** Mandatory here, not discretionary: the system
    evaluates people extensively and automatically, with significant effects. Doing it after go-live
    does not cure the breach.
-3. **Fix the vendor paperwork before any data flows.** An Article 28 agreement with Kestrel,
-   explicit authorisation of the US parent as sub-processor, and a verified transfer mechanism for
-   US support access — confirm their Data Privacy Framework certification covers HR data, or fall
-   back to standard contractual clauses with a transfer impact assessment. Add a clause barring
-   reuse of your candidate data to train Kestrel's general model.
+3. **Fix the vendor paperwork before any data flows.** Every CV screened crosses to US
+   infrastructure: an Article 28 agreement, full sub-processor
+   disclosure, and a verified transfer mechanism — confirm the vendor's Data Privacy Framework
+   certification actually covers HR data, or fall back to standard contractual clauses with a
+   transfer impact assessment. Add a clause barring reuse of your candidate data to improve the
+   vendor's own product.
 
 **Residual risks, disclosed.** CV free text carries proxies for ethnicity, religion, health and
 union membership; you can strip photographs and test for disparate impact, but you cannot stop a
@@ -175,25 +178,66 @@ compatibility assessment fails, that dataset needs a different basis or has to g
 **On the six weeks:** actions 1 and 3 are achievable, and the DPIA is if you start now. Full AI
 Act conformity work is not, and need not be — those obligations apply from 2 December 2027.
 
-_(memo body: 400 words — lab requires 300–400)_
+_(memo body: 399 words — lab requires 300–400)_
 
 ---
 
 ## 4. Verify — peer review exchange
 
-**My memo reviewed by Vittal (he acts as client):** _pending._
-
-**My review of Vittal's memo, against the lab rubric:** _pending his memo._
+**My review of Vittal's memo** (his pack: [`from_vittal/GDPR-Audit-Pack-VittalNavale.md`](./from_vittal/GDPR-Audit-Pack-VittalNavale.md)):
 
 | Criterion | Score 1–3 | Comment |
 |---|---|---|
-| Clear bottom-line recommendation | | |
-| Lawful basis selection is justified | | |
-| Top actions are specific and sequenced | | |
-| Residual risks are named honestly | | |
-| Law stacking is addressed (AI Act / ePrivacy) | | |
+| Clear bottom-line recommendation | **3** | "Go, with conditions" stated up front, restated at the close, and the reason given in one sentence. No hedging, and a reader with five minutes gets the answer immediately. |
+| Lawful basis selection is justified | **3** | Four purposes, each with a basis and a reason. Correctly splits Art 6(1)(b) for handling the application from Art 6(1)(f) for the ranking, and — the part most people get wrong — marks the automated rejection and the model-training purposes as **TBD — legal review** rather than inventing a basis. The Art 6(4) compatibility point on repurposing employee retention records is exactly right. |
+| Top actions are specific and sequenced | **3** | Named, ordered, and each tied to the exposure it closes. Action 3 goes further than mine by making the processor-vs-controller question a contractual deliverable rather than an observation. |
+| Residual risks are named honestly | **3** | Three real ones, and he resists the temptation to imply they are solvable. The explainability risk — "no clear answer beyond 'the model said so'" — is the sharpest line in either memo, and it is a risk I under-weighted in mine. |
+| Law stacking is addressed (AI Act / ePrivacy) | **2** | AI Act tier correct and the obligations list is sound, and the observation that the undecided human-review question is an AI Act gap *as well as* a GDPR one is a good one. Two gaps: no **timing** — the memo implies AI Act conformity work is due before launch, when Annex III obligations apply from **2 December 2027**; and the conformity assessment is described without noting it is **internal control under Annex VI**, so a client could infer a notified body is needed. ePrivacy is flagged but waved off as secondary; consent under Art 5(3) is not optional where non-essential cookies are set. |
+
+**As the client, in three sentences:** Accepted, with one challenge. Action 1 is right and we will
+mandate recruiter review of every "not a fit" before launch — but your memo reads as though the AI
+Act conformity work must also land inside the six weeks, and if that is wrong it changes what we
+can realistically commit to, so tell us plainly which obligations bite now and which bite in
+December 2027. Second, your retention recommendation of 6–12 months is asserted rather than
+justified: we hire across the EEA, expectations differ sharply by country, and we need the
+reasoning per jurisdiction before we can adopt a single figure.
+
+**Vittal's review of my memo:** _pending._
 
 ## 5. Debrief — agreement and divergence
 
-_Pending the swap. To record: where our two audits agreed on lawful basis and DPIA need, where
-they diverged, and for each divergence which reading is stronger and why._
+Both audits were written independently against the same agreed fact pattern.
+
+**Where we agreed** — and the agreement is substantive, not superficial:
+
+- **Bottom line.** Both landed on **go with conditions**, and both refused both alternatives: neither
+  of us treated this as launchable as-is, and neither of us reached for "stop".
+- **Article 22 is the crux, and the fix is procedural.** We independently concluded that the
+  automated rejection is a solely automated decision, that consent and contract necessity are both
+  unsound gateways in a recruitment power imbalance, and that the correct remedy is to make Article
+  22 stop applying by requiring genuine human review — not to hunt for a better legal basis.
+- **DPIA is mandatory**, and both of us made it action 2, before first processing.
+- **Article 9 by inference, not collection.** Same conclusion, same reasoning: proxies in free-text
+  CVs and a model trained on historical outcomes, and both of us rejected the "we don't collect that
+  field" defence explicitly.
+- **Controller/processor split**, including the same warning that the vendor becomes a controller in
+  its own right if it reuses client data to improve its product.
+- **Transfers** need SCCs plus a transfer impact assessment, or verified DPF certification.
+
+**Where we diverged, and which reading is stronger:**
+
+| Point | Vittal | Me | Stronger reading |
+|---|---|---|---|
+| **Retention for unsuccessful applicants** | 6–12 months, to preserve a discrimination-claims defence | Initially anchored to the Dutch 4-week norm, corrected to a per-jurisdiction matrix once the fact pattern went EEA-wide | **Neither as first written.** His figure is defensible but asserted without jurisdictional grounding; my original was precise but wrong for an EEA-wide employer — a national norm cannot govern a 15,000-employee chain hiring across member states. The stronger answer is his *purpose* (claims defence sets the floor) with my *structure* (a documented per-jurisdiction matrix, shortest defensible default). |
+| **DPIA trigger** | At least four of the EDPB's nine criteria | Six or seven of nine, **plus Art 35(3)(a) making it mandatory outright** | **Mine**, narrowly — counting criteria is the softer argument, and citing Art 35(3)(a) directly means the DPIA obligation does not depend on how a supervisory authority scores the criteria. His conclusion is identical; the route is just less robust. |
+| **AI Act timing** | Implies conformity work must precede launch | Annex III obligations apply from 2 Dec 2027; the GDPR fixes are what bind the six-week window | **Mine.** Conflating the two clocks would have the client spend six weeks on documentation that is not yet due while the Article 22 exposure is live now. |
+| **Conformity assessment route** | "A conformity assessment before deployment" | Internal control under **Annex VI**; no notified body for Annex III(4) | **Mine** — the unqualified phrasing invites a client to procure a third-party assessment the Act does not require here. |
+| **ePrivacy** | Flagged, but "not the primary exposure" | Consent under Art 5(3) overrides GDPR flexibility for non-essential cookies | **Mine on the law, his on the priority.** He is right that it is not where the risk sits; I am right that it is not discretionary. Both belong in the memo. |
+| **Explainability as a residual risk** | Named as a standing operational and reputational problem | Treated mainly as an Art 15(1)(h) access-request duty | **His.** Framing it as "recruiters need enough visibility to give a real answer" is the more useful consulting output — mine described the legal duty without the operating consequence. Adopted. |
+| **Digital Omnibus interactions** | Not raised | Art 4a as the basis for bias testing on special-category data; Art 12 logging vs storage limitation | **Mine**, but this is coverage rather than a disagreement — the Art 4a point removes the obstacle his own bias-testing recommendation would otherwise hit. |
+
+**One process note for the debrief conversation.** Vittal's transition note records that the AI Act
+lab repository "was empty at the time of this lab", so he could not carry a tier forward under
+Option A and wrote a self-authored case instead. That is a consequence of our AI Act work not yet
+being pushed, not of anything he did — and it is worth saying so on the record, since his pack
+otherwise reads as though the prior lab produced nothing.

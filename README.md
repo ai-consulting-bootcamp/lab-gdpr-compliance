@@ -30,7 +30,7 @@ This repository contains everything you need for this lab.
 |---|---|
 | [`fact-pattern-cv-screening-shared.md`](./fact-pattern-cv-screening-shared.md) | The shared fact pattern agreed with my lab partner, plus the transition note explaining which EU AI Act case is carried forward and why |
 | [`gdpr-audit-pack-ugo-ahukannah.md`](./gdpr-audit-pack-ugo-ahukannah.md) | The audit pack: data map, risk and rights, law stacking, the client recommendation memo, peer review and debrief |
-| `reviews/` | Documents received from my lab partner (his memo, and his review of mine) |
+| [`from_vittal/GDPR-Audit-Pack-VittalNavale.md`](./from_vittal/GDPR-Audit-Pack-VittalNavale.md) | My lab partner's audit pack and memo, received for the Phase 4 swap |
 
-**Lab partner:** Vittal. Scenario carried forward from the EU AI Act lab: retail CV screening,
+**Lab partner:** Vittal Navale. Scenario carried forward from the EU AI Act lab: retail CV screening,
 classified high-risk under Annex III(4).
