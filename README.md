@@ -1,13 +1,20 @@
 # Same product, privacy lens
 
-**Track:** Module 7 — GDPR · **When:** Week 7, Day 3 · **Status:** Required
+**Track:** Module 7 — GDPR · **When:** Week 7, Day 3 · **Status:** Submitted
 
-This repository contains everything you need for this lab.
+GDPR audit for the Virtual Coffee Chat Bot (Project 3), carried forward from the Week 7 Day 2 EU AI Act self-audit (Option A).
 
 ## Files
 
-- [`instructions.md`](./instructions.md) — the lab instructions
-- [`rubric.md`](./rubric.md) — how your submission is graded; this is what the AI reviewer checks your PR against
+- [`GDPR Audit Pack - John Adams.md`](./GDPR%20Audit%20Pack%20-%20John%20Adams.md) — full audit: transition note, fact pattern, Sections A/B/C worksheet, client recommendation memo, peer review score on partner's memo, and debrief notes.
+- [`Client Recommendation Memo - John Adams.md`](./Client%20Recommendation%20Memo%20-%20John%20Adams.md) — standalone copy of the client memo, the file handed to the lab partner for peer review.
+- [`Peer Review - John Adams on Gordan.md`](./Peer%20Review%20-%20John%20Adams%20on%20Gordan.md) — scored rubric and client reaction on the partner's memo, handed back to the partner.
+- [`instructions.md`](./instructions.md) — the lab instructions.
+- [`rubric.md`](./rubric.md) — how this submission is graded.
+
+## Scope note
+
+Core (Phases 1-4, CFU checkpoints 1-5) is complete. **Reinforce and Stretch sections are explicitly out of scope for this submission** — they are marked optional in `instructions.md` ("if you finish early") and were intentionally not done.
 
 ## How to complete this lab
 
