@@ -11,7 +11,7 @@
 | [`gdpr_audit_pack_paola_gretel.md`](./gdpr_audit_pack_paola_gretel.md) | Agreed fact pattern, transition note, data map, risk-and-rights assessment, law stacking, DPIA outline, and proposed DPA clause |
 | [`client_recommendation_memo.md`](./client_recommendation_memo.md) | 300â€“400 word client memo with bottom line, three sequenced actions, and residual risks |
 | [`data_protection_by_design_checklist.md`](./data_protection_by_design_checklist.md) | Stretch checklist showing pass, fail, or unknown for the highest-risk activity |
-| [`partner_peer_review.md`](./partner_peer_review.md) | Phase 4 rubric and Phase 5 debrief template for Gretel to complete after reviewing the memo |
+| [`partner_peer_review.md`](./partner_peer_review.md) | Completed Phase 4 peer rubric, client response, Phase 5 comparison, and joint conclusion |
 | [`instructions.md`](./instructions.md) | Original lab instructions |
 | [`rubric.md`](./rubric.md) | Original grading rubric |
 
@@ -21,13 +21,13 @@ This audit covers a defined production scenario derived from the [Intellectus â€
 
 The client and case are fictional but operationally specific. No real personal data, client documents, credentials, API keys, or n8n execution payloads are included in this repository.
 
-## Completion workflow
+## Completed workflow
 
-1. Paola and Gretel confirm the common fact pattern.
-2. Review the audit worksheet and recommendation memo.
-3. Gretel completes `partner_peer_review.md` as the client reviewer.
-4. Paola and Gretel add the two-to-three sentence debrief conclusion.
-5. Confirm that the repository contains no personal data or secrets before submission.
+1. Paola and Gretel confirmed the common fact pattern.
+2. The audit worksheet and recommendation memo were completed.
+3. Gretel completed the peer rubric and client response.
+4. Paola and Gretel documented their comparison and joint conclusion.
+5. The submitted files were checked for unfinished placeholders.
 
 ## Bottom line
 
