@@ -34,8 +34,9 @@ configured.
 
 **D. Measures.** Mandatory human review before any rejection, with recorded override capability;
 feature minimisation — strip photographs and fields carrying protected proxies before ingestion;
-bias testing across demographic groups pre-launch and on every model version, using the Digital
-Omnibus's **Art 4a** basis for processing special-category data for bias detection; a contractual
+bias testing across demographic groups pre-launch and on every model version, using the **Art 4a** basis
+(inserted into the AI Act by Regulation (EU) 2026/1744, in force 27 July 2026) for processing
+special-category data where necessary for bias detection and correction; a contractual
 right to logic information sufficient to answer Art 15(1)(h); an Art 28 DPA with full sub-processor
 disclosure and a verified transfer mechanism; a per-jurisdiction retention matrix with automated
 deletion; and a documented scope boundary requiring a fresh DPIA before any extension to employee

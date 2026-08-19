@@ -140,10 +140,12 @@ not a public body, not a private entity providing a public service, and not an A
 deployer. Two interactions worth naming: the AI Act's **Art 12 logging duty (≥6 months)** runs
 directly against GDPR's storage limitation and the short retention expected for unsuccessful
 applications, so logs must be scoped to what the AI Act requires and separated from the candidate
-record; and the Digital
-Omnibus's **new Art 4a** now provides a legal basis for processing special-category data for bias
-detection and correction, which removes the Article 9 obstacle that used to block exactly the
-fairness testing this system needs.
+record; and **Article 4a**, inserted into the AI Act by
+**Regulation (EU) 2026/1744** (published OJ 24 July 2026, in force 27 July 2026), now provides a
+legal basis for processing special-category data where necessary for bias detection and correction —
+removing the Article 9 obstacle that used to block exactly the fairness testing this system needs.
+It is an *exceptional* basis subject to a necessity test, and this system reaches it by the
+high-risk route via Art 10(2)(f) and (g), not by the broader extension to non-high-risk systems.
 
 **ePrivacy check.** Yes — the careers portal serves cookies and any analytics or tracking pixels on
 it require **prior consent** under Art 5(3) ePrivacy, and that consent requirement **overrides**
