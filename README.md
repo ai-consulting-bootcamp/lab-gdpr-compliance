@@ -21,3 +21,16 @@ This repository contains everything you need for this lab.
 - Keep this repository scoped to this lab only — no unrelated projects or personal files.
 - Use clear, descriptive filenames.
 - Remove secrets, API keys, and tokens before committing.
+
+---
+
+## Submission contents (Ugo Ahukannah)
+
+| File | Contents |
+|---|---|
+| [`fact-pattern-cv-screening-shared.md`](./fact-pattern-cv-screening-shared.md) | The shared fact pattern agreed with my lab partner, plus the transition note explaining which EU AI Act case is carried forward and why |
+| [`gdpr-audit-pack-ugo-ahukannah.md`](./gdpr-audit-pack-ugo-ahukannah.md) | The audit pack: data map, risk and rights, law stacking, the client recommendation memo, peer review and debrief |
+| `reviews/` | Documents received from my lab partner (his memo, and his review of mine) |
+
+**Lab partner:** Vittal. Scenario carried forward from the EU AI Act lab: retail CV screening,
+classified high-risk under Annex III(4).
