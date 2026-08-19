@@ -242,69 +242,104 @@ The proposed system analyses CVs, application answers and professional informati
 **Recommendation:** Proceed only as a **conditional go-live**. The organisation should verify the required GDPR controls before production deployment and periodically reassess the system as its use, vendors, vacancies, or data sources change.
 
 ---
-
 # Part III — Peer Verification
 
 ## Phase 4 — Verify
 
-**Status:** To be completed after exchanging the recommendation memo with the teammate.
+**Reviewer:** Akansha Verma
+**Date:** 19 August 2026
 
-### Peer Review
+### 1. Did the reviewer accept the recommendation?
 
-**Reviewer:** [Teammate Name]
-**Date:** [Date]
+**Yes.** The reviewer accepted the overall **“Go with conditions”** recommendation.
 
-**1. Did the reviewer accept the recommendation?**
+The reviewer agreed that the system is workable under GDPR but should not process live candidate data until the key compliance gaps are resolved.
 
-[To be completed.]
+### 2. Finding challenged by the reviewer
 
-**2. Finding challenged by the reviewer:**
+The reviewer challenged the level of certainty around two areas:
 
-[To be completed.]
+* **Article 22 / meaningful human review:** The audit should not simply state that a recruiter is present in the process. It should define and document what meaningful human intervention means in practice, including recruiter authority, time for review, ability to override the AI ranking, and evidence of actual overrides.
+* **Future-campaign reuse:** The reviewer agreed that reuse for future vacancies must be treated as a separate purpose with its own lawful-basis analysis, retention limit and transparency requirements. The reviewer suggested fresh informed consent for unrelated future campaigns.
 
-**3. Requested redesign or clarification:**
+**Audit response:** The first point is accepted and should be strengthened. For future-campaign reuse, the audit will not automatically conclude that consent is legally mandatory. The appropriate Article 6 basis remains **TBD — legal review**, because the correct basis depends on the purpose, candidate expectations, compatibility of further processing, applicable national law and the specific recruitment relationship.
 
-[To be completed.]
+### 3. Requested redesign or clarification
 
-**4. Reviewer comments:**
+The reviewer requested that the system design and audit controls be strengthened in three areas:
 
-[To be completed.]
+1. Define measurable **meaningful human review** controls, including recruiter override authority, review time and override tracking.
+2. Complete the **DPIA before the first live candidate data is processed**, addressing profiling, discrimination, opacity, special-category inference and historical assessment reuse.
+3. Separate **future-campaign reuse** from the original recruitment purpose and establish a specific lawful-basis, transparency, retention and deletion framework before enabling reuse.
 
----
+### 4. Reviewer comments
+
+The reviewer identified three residual risks that remain even if the recommended controls are implemented:
+
+* **Inferred special-category data:** The model may identify proxy signals relating to health, religion or other protected characteristics from free-text CVs. Testing and monitoring can reduce this risk but cannot necessarily eliminate it.
+* **Multi-jurisdiction inconsistency:** Recruiters across different offices may apply meaningful human review differently. Central governance and documented procedures are therefore required.
+* **Vendor dependency:** A third-party AI or CV-processing vendor may change model behaviour over time. A DPA alone does not eliminate model-drift or vendor-change risks, so contractual review and advance-notice requirements should be considered.
 
 # Part IV — Debrief
 
 ## Phase 5 — Debrief
 
-**Status:** To be completed after the peer review.
-
 ### Points of Agreement
 
-* [To be completed.]
-* [To be completed.]
-* [To be completed.]
+The two audits broadly agree on the overall recommendation and the main GDPR risks:
+
+* **Overall recommendation:** Go with conditions. The system should not process live candidate data until the required controls are implemented and verified.
+* **DPIA:** Both audits agree that a DPIA should be completed before live candidate processing because the system involves candidate evaluation, scoring/profiling and potentially significant effects on access to employment.
+* **Article 22:** Both audits agree that the presence of a recruiter in the workflow is not, by itself, sufficient to demonstrate meaningful human intervention. The organisation must define, document and monitor how recruiters review and override AI recommendations.
+* **Future-campaign reuse:** Both audits agree that reuse of candidate assessment results for future campaigns must be treated as a separate purpose and cannot be treated as unrestricted continuation of the original recruitment purpose.
+* **Residual risks:** Both audits identify continuing risks around profiling, discrimination or inferred special-category data, historical assessment reuse and the operation of the system across multiple recruitment offices.
 
 ### Points of Divergence
 
-* [To be completed.]
-* [To be completed.]
+The main divergence concerns the **lawful basis for future-campaign reuse**.
+
+The teammate's recommendation was that unrelated future-campaign reuse would likely require fresh, informed consent from the candidate, together with an opt-out and defined retention limit.
+
+Our audit took a more cautious position and recorded:
+
+**TBD — legal review.**
+
+The audit does not assume that consent is automatically mandatory because the appropriate Article 6 lawful basis depends on the specific purpose, candidate expectations, compatibility of further processing, recruitment relationship and applicable national law.
 
 ### Lawful Basis Discussion
 
-**Audit position:** [To be completed.]
+**Audit position:**
 
-**Teammate position:** [To be completed.]
+For each processing purpose, the lawful basis should be established separately. Legitimate interests may potentially be relevant to recruitment screening, but only after completing the three-step LIA test: legitimate purpose, necessity and balancing. Contractual necessity should not be assumed simply because a candidate has submitted an application. Future-campaign reuse requires a separate assessment and should remain **TBD — legal review** until the purpose, expectations and applicable legal framework are confirmed.
 
-**Agreed position:** [To be completed.]
+**Teammate position:**
+
+The teammate considered that screening for a specific vacancy could potentially rely on contract or legitimate interests, while unrelated future-campaign reuse would likely require fresh informed consent with a clear opt-out and retention limit.
+
+**Agreed position:**
+
+The stronger audit position is to keep the lawful basis for future-campaign reuse as **TBD — legal review** rather than automatically requiring consent. Both audits agree that future reuse must have its own defined purpose, lawful basis, transparency measures and retention limit. If consent is ultimately selected, it must satisfy the GDPR requirements for valid consent.
 
 ### DPIA Discussion
 
-**Audit position:** [To be completed.]
+**Audit position:**
 
-**Teammate position:** [To be completed.]
+A DPIA is likely required because the proposed processing involves AI-based evaluation and ranking of candidates, profiling, potentially significant effects on employment opportunities, and risks involving discrimination and special-category data.
 
-**Agreed position:** [To be completed.]
+**Teammate position:**
+
+The teammate considered the DPIA mandatory before the first live candidate application is processed and recommended that it specifically address discriminatory inference, ranking opacity and historical assessment reuse.
+
+**Agreed position:**
+
+The audits agree that the DPIA should be completed **before live candidate data is processed**. It should address profiling and scoring, meaningful human review, discrimination and bias, possible special-category inference, transparency, retention and future-campaign reuse, data subject rights, vendor risks and international transfers.
 
 ### Final Debrief Conclusion
 
-[To be completed after discussion with the teammate.]
+The two audits reach the same overall conclusion: the AI recruitment system is potentially deployable, but **not on the current controls alone**.
+
+The strongest agreed recommendation is **Go with conditions**, subject to completion and verification of the DPIA, lawful-basis analysis, Article 22 assessment, meaningful human-review controls, retention and future-use rules, vendor/DPA checks and international-transfer assessment.
+
+The principal difference concerned whether consent should automatically be required for future-campaign reuse. After comparison, the more defensible audit position is to retain **TBD — legal review** until the precise future-use purpose, candidate expectations, compatibility assessment and applicable national rules are established.
+
+The key lesson from the peer review is that **human review must be demonstrably meaningful, not merely present on paper**, and that **a new processing purpose requires its own GDPR analysis rather than being automatically covered by the original recruitment purpose**.
