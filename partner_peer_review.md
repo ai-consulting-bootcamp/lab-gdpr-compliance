@@ -4,25 +4,19 @@
 
 Read `client_recommendation_memo.md` as River Learning Collective's client reviewer. Score every criterion from 1 to 3 and add a specific comment. Do not approve the memo only because you agree with its general direction; challenge any legal basis, sequence, or mitigation that is not convincing.
 
-## Phase 4 — Peer feedback rubric
+## Phase 4 — Peer Feedback Rubric
 
 | Criterion | Score 1–3 | Gretel's comment |
 | --- | ---: | --- |
-| Clear bottom-line recommendation | Pending | Pending partner review |
-| Lawful-basis selection is justified | Pending | Pending partner review |
-| Top actions are specific and sequenced | Pending | Pending partner review |
-| Residual risks are named honestly | Pending | Pending partner review |
-| Law stacking is addressed (AI Act / ePrivacy) | Pending | Pending partner review |
+| Clear bottom-line recommendation | 3 | The **Go with conditions** recommendation is explicit from the beginning and clearly identifies what must be completed before internal client data enters the production workflow. |
+| Lawful-basis selection is justified | 3 | The wider audit provides a well-reasoned lawful-basis analysis, including a limited use of legitimate interests, a clear distinction for contractual processing, and separate legal review for special-category data rather than assuming a blanket basis. |
+| Top actions are specific and sequenced | 3 | The actions are practical and well ordered: complete the DPIA first, establish the contractual and international-transfer framework, and then implement enforceable operational controls for minimisation, retention, access and data-subject rights. |
+| Residual risks are named honestly | 3 | The memo clearly identifies risks that remain even after mitigation, including unexpected sensitive information, inaccurate or stigmatising inferences, outdated public-source data, overseas subprocessor access and over-reliance on AI-generated outputs. |
+| Law stacking is addressed (AI Act / ePrivacy) | 3 | The wider audit addresses the AI Act and ePrivacy separately and explains the current organisational decision-support use case, the importance of meaningful human review, and the need to reassess the position if the system is later used to make decisions about individuals. |
 
-### Client response — to be completed by Gretel
+### Client Response
 
-Choose one and write two to three sentences:
-
-- Accept the recommendation;
-- challenge one finding; or
-- request a redesign of one section.
-
-**Response:** Pending partner review.
+I accept the **Go with conditions** recommendation. The proposed controls and sequence are proportionate to the production scenario, and I agree that a full DPIA should be completed before the pilot if Intellectus will process internal documents involving potentially sensitive information, vulnerable beneficiaries and combined client and public-source data.
 
 ## Phase 5 — Debrief
 
