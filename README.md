@@ -2,7 +2,7 @@
 
 **Authors:** Paola Hintze and Gretel  
 **Scenario:** German social-impact organisation using Intellectus for an AI-assisted organisational diagnostic  
-**Status:** Phases 1–3 drafted; partner review and debrief pending
+**Status:** Phases 1–3 and Phase 5 completed; Gretel's Phase 4 scores and client response pending
 
 ## Submission files
 
