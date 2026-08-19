@@ -172,11 +172,10 @@ it, and honouring the right properly means retraining on a cleaned set. And reus
 past applications as training data changes the purpose they were collected for; if the
 compatibility assessment fails, that dataset needs a different basis or has to go.
 
-**On the six weeks:** actions 1 and 3 and the candidate disclosure are achievable, and the DPIA is
-if you start now. Full AI Act conformity work is not, and does not need to be — those obligations
-apply from 2 December 2027.
+**On the six weeks:** actions 1 and 3 are achievable, and the DPIA is if you start now. Full AI
+Act conformity work is not, and need not be — those obligations apply from 2 December 2027.
 
-_(memo body: 406 words — lab requires 300–400)_
+_(memo body: 400 words — lab requires 300–400)_
 
 ---
 
