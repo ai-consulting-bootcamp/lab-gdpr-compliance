@@ -26,13 +26,14 @@ Choose one and write two to three sentences:
 
 ## Phase 5 — Debrief
 
-After comparing the paired audit with Gretel's independent Intellectus self-audit, Paola and Gretel reached the following conclusions.
+- **Where we agreed on lawful basis:** We agreed that legitimate interests can support limited business-contact and bounded public professional research, subject to necessity, minimisation and balancing. We also agreed that internal employee, volunteer, donor, beneficiary and any Article 9 processing cannot rely on a blanket lawful basis and requires separate legal assessment.
 
-- **Where we agreed on lawful basis:** We agreed that legitimate interests may support bounded public professional research and limited business-contact processing only where necessity, minimisation, and balancing are documented. It should not be treated as a blanket basis for internal employee, volunteer, donor, or beneficiary data, and any Article 9 processing requires a separate condition and legal review.
-- **Where we agreed on the DPIA:** We agreed that formal DPIA screening must occur before real internal client data is enabled and that a DPIA is required when the production design confirms multiple EDPB criteria, particularly innovative technology combined with sensitive data, vulnerable data subjects, or dataset combination.
-- **Where we diverged:** Gretel's self-audit framed the DPIA conditionally because it assessed both the current public/demo MVP and an undefined future deployment. The paired audit treated a specific production scenario—internal documents, AI inference, vulnerable beneficiaries, and combined public and private sources—as already agreed, so it concluded that a DPIA is required before the pilot.
-- **Which interpretation is stronger and why:** Both interpretations are proportionate to their scope, but the paired audit's mandatory-DPIA conclusion is stronger for the agreed production scenario because several EDPB high-risk criteria are already present rather than merely hypothetical.
+- **Where we agreed on the DPIA:** We agreed that a formal privacy impact assessment must take place before Intellectus processes real internal client data and that the production scenario presents several indicators of potentially high-risk processing.
 
-### Joint conclusion — two to three sentences
+- **Where we diverged:** The difference was mainly the timing and strength of the DPIA conclusion. Gretel's self-audit separated the demonstrated public/demo MVP from the prospective production deployment and therefore required DPIA screening before real internal documents were introduced. Paola's audit assessed the agreed production scenario directly and concluded that a full DPIA should be completed before the pilot.
 
-Both audits reached **proceed with conditions** and identified the transition from bounded public/demo evidence to private client documents as the central GDPR risk. Comparing them clarified that Gretel's conditional DPIA language is appropriate for the current MVP, while a full DPIA is the stronger requirement for our defined production scenario; we also agreed that minimisation, DPAs, transfer controls, data-subject rights, and auditable human review must be in place before real personal data is processed.
+- **Which interpretation is stronger and why:** For the agreed production scenario, Paola's interpretation is stronger because the scenario already includes AI-supported analysis of internal documents, potentially sensitive information, vulnerable data subjects and combined client and public-source datasets. For the current public/demo MVP, Gretel's evidence-based distinction between observed, prospective and TBD remains appropriate.
+
+### Joint conclusion
+
+We agree on a **Proceed with conditions** recommendation and on the main controls required before Intellectus processes real internal client data. For the agreed production scenario, we would require a full DPIA before the pilot, together with completed processor governance, transfer controls, minimisation, retention, data-subject rights procedures and auditable human review.
