@@ -6,9 +6,10 @@ GDPR audit for the Virtual Coffee Chat Bot (Project 3), carried forward from the
 
 ## Files
 
-- [`GDPR Audit Pack - John Adams.md`](./GDPR%20Audit%20Pack%20-%20John%20Adams.md) — full audit: transition note, fact pattern, Sections A/B/C worksheet, client recommendation memo, peer review score on partner's memo, and debrief notes.
-- [`Client Recommendation Memo - John Adams.md`](./Client%20Recommendation%20Memo%20-%20John%20Adams.md) — standalone copy of the client memo, the file handed to the lab partner for peer review.
-- [`Peer Review - John Adams on Gordan.md`](./Peer%20Review%20-%20John%20Adams%20on%20Gordan.md) — scored rubric and client reaction on the partner's memo, handed back to the partner.
+- [`GDPR Audit Pack - John Adams.md`](./GDPR%20Audit%20Pack%20-%20John%20Adams.md) — full audit: transition note, fact pattern, Sections A/B/C worksheet, client recommendation memo, peer review score on partner's memo, debrief notes, and a summary of corrections applied after the partner's review of this memo.
+- [`Client Recommendation Memo - John Adams.md`](./Client%20Recommendation%20Memo%20-%20John%20Adams.md) — standalone copy of the client memo, the file handed to the lab partner for peer review. Updated after partner feedback (see below).
+- [`Peer Review - John Adams on Gordan.md`](./Peer%20Review%20-%20John%20Adams%20on%20Gordan.md) — scored rubric and client reaction, John's review of the partner's memo, handed back to the partner.
+- [`peer-review-coffee-chat-bot.md`](./peer-review-coffee-chat-bot.md) — scored rubric and client reaction, the partner's (Gordan's) review of this memo. Two of his findings (lawful basis for the chat itself, n8n incorrectly listed as a third-party vendor) were corrections and have been applied directly to the worksheet and memo, not just logged; see the "Gordan's peer review of this memo" section at the end of the audit pack for the full breakdown of what changed and why.
 - [`instructions.md`](./instructions.md) — the lab instructions.
 - [`rubric.md`](./rubric.md) — how this submission is graded.
 
