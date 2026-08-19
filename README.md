@@ -1,23 +1,34 @@
-# Same product, privacy lens
+# GDPR Compliance Lab — Intellectus
 
-**Track:** Module 7 — GDPR · **When:** Week 7, Day 3 · **Status:** Required
+**Authors:** Paola Hintze and Gretel  
+**Scenario:** German social-impact organisation using Intellectus for an AI-assisted organisational diagnostic  
+**Status:** Phases 1–3 drafted; partner review and debrief pending
 
-This repository contains everything you need for this lab.
+## Submission files
 
-## Files
+| File | Contents |
+| --- | --- |
+| [`gdpr_audit_pack_paola_gretel.md`](./gdpr_audit_pack_paola_gretel.md) | Agreed fact pattern, transition note, data map, risk-and-rights assessment, law stacking, DPIA outline, and proposed DPA clause |
+| [`client_recommendation_memo.md`](./client_recommendation_memo.md) | 300–400 word client memo with bottom line, three sequenced actions, and residual risks |
+| [`data_protection_by_design_checklist.md`](./data_protection_by_design_checklist.md) | Stretch checklist showing pass, fail, or unknown for the highest-risk activity |
+| [`partner_peer_review.md`](./partner_peer_review.md) | Phase 4 rubric and Phase 5 debrief template for Gretel to complete after reviewing the memo |
+| [`instructions.md`](./instructions.md) | Original lab instructions |
+| [`rubric.md`](./rubric.md) | Original grading rubric |
 
-- [`instructions.md`](./instructions.md) — the lab instructions
-- [`rubric.md`](./rubric.md) — how your submission is graded; this is what the AI reviewer checks your PR against
+## Agreed scope
 
-## How to complete this lab
+This audit covers a defined production scenario derived from the [Intellectus — Social Impact Consulting Intelligence](https://github.com/paolahsp/Social-Impact-Consulting-Intelligence) MVP. It does not claim that the current public MVP already processes private client documents. For this lab, the production deployment includes internal document upload, n8n orchestration, OpenAI API analysis, public-source research, and mandatory consultant review.
 
-1. **Fork** this repository.
-2. Do the work described in `instructions.md`, committing to your fork.
-3. Open a **pull request** back into this repository.
-4. You'll receive **AI feedback** on your PR based on `rubric.md`. Address any blocking feedback and push updates to the same PR.
+The client and case are fictional but operationally specific. No real personal data, client documents, credentials, API keys, or n8n execution payloads are included in this repository.
 
-## Submission hygiene
+## Completion workflow
 
-- Keep this repository scoped to this lab only — no unrelated projects or personal files.
-- Use clear, descriptive filenames.
-- Remove secrets, API keys, and tokens before committing.
+1. Paola and Gretel confirm the common fact pattern.
+2. Review the audit worksheet and recommendation memo.
+3. Gretel completes `partner_peer_review.md` as the client reviewer.
+4. Paola and Gretel add the two-to-three sentence debrief conclusion.
+5. Confirm that the repository contains no personal data or secrets before submission.
+
+## Bottom line
+
+**Go with conditions.** Intellectus may proceed only after a DPIA, enforceable controller–processor agreements, lawful-basis and Article 9 controls, data minimisation, retention enforcement, subject-rights procedures, and international-transfer verification are completed.
