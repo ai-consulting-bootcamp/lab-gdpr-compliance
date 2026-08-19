@@ -26,7 +26,35 @@ December 2027. Second, your retention recommendation of 6–12 months is asserte
 justified: we hire across the EEA, expectations differ sharply by country, and we need the
 reasoning per jurisdiction before we can adopt a single figure.
 
-**Vittal's review of my memo:** _pending._
+**Vittal's review of my memo** ([`from_vittal/peer-review-of-ugo-memo-vittal-navale.md`](./from_vittal/peer-review-of-ugo-memo-vittal-navale.md)): **15 / 15** — 3 on all five criteria.
+
+He confirms the split worked: *"I only received the cleanly split files … no earlier mixed version
+reached me, so nothing anchored this read."* He credited three things specifically: the five-purpose
+lawful-basis breakdown with the LIA written out and honestly concluding the balancing test currently
+fails; the DPF-certification-**scope** check in Action 3 (covers HR data, not certification
+generally); and the erasure residual risk, which he had as a Section B friction point but did not
+carry into his own memo.
+
+**His one concern, as the client, and how it resolves.** He challenged the Section C reliance on
+**Article 4a**, believing the Digital Omnibus to be "a Commission proposal, not yet adopted or in
+force", and asked that the bias-testing mitigation rest on a current Art 9(2) gateway instead.
+
+Checked independently, and the challenge does not hold: **Regulation (EU) 2026/1744 was published in
+the Official Journal on 24 July 2026 and entered into force on 27 July 2026** — it is amending law,
+not a proposal. The likely source of the error is the **7 May 2026 provisional agreement**, which is
+precisely why the position should always be cited to the instrument rather than asserted. Article 4a
+itself is real and does what the pack relies on: it permits the exceptional processing of special
+categories of personal data where necessary for bias detection and correction, extended beyond
+high-risk systems to other AI systems and models.
+
+**Two things I am adopting from the challenge even though it was wrong on the facts.** First, every
+Omnibus-dependent claim in the pack now carries its instrument and in-force date inline, so a
+client's counsel can verify in one step rather than taking it on trust — the discipline his own
+first pack demonstrated. Second, his instinct that a mitigation should not rest on shaky ground is
+right in general, so the pack now records *why* the ground is firm here: Art 4a is an **exceptional**
+basis subject to a necessity test, and this system reaches it by the **high-risk route** via Article
+10(2)(f) and (g), rather than by the broader extension to non-high-risk systems that the EDPB and
+EDPS asked to see circumscribed.
 
 # CFU 5 — Debrief: agreement and divergence
 
