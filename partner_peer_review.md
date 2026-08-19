@@ -26,13 +26,13 @@ Choose one and write two to three sentences:
 
 ## Phase 5 — Debrief
 
-After Gretel completes the review, Paola and Gretel will compare their conclusions.
+After comparing the paired audit with Gretel's independent Intellectus self-audit, Paola and Gretel reached the following conclusions.
 
-- **Where we agreed on lawful basis:** Pending.
-- **Where we agreed on the DPIA:** Pending.
-- **Where we diverged:** Pending.
-- **Which interpretation is stronger and why:** Pending.
+- **Where we agreed on lawful basis:** We agreed that legitimate interests may support bounded public professional research and limited business-contact processing only where necessity, minimisation, and balancing are documented. It should not be treated as a blanket basis for internal employee, volunteer, donor, or beneficiary data, and any Article 9 processing requires a separate condition and legal review.
+- **Where we agreed on the DPIA:** We agreed that formal DPIA screening must occur before real internal client data is enabled and that a DPIA is required when the production design confirms multiple EDPB criteria, particularly innovative technology combined with sensitive data, vulnerable data subjects, or dataset combination.
+- **Where we diverged:** Gretel's self-audit framed the DPIA conditionally because it assessed both the current public/demo MVP and an undefined future deployment. The paired audit treated a specific production scenario—internal documents, AI inference, vulnerable beneficiaries, and combined public and private sources—as already agreed, so it concluded that a DPIA is required before the pilot.
+- **Which interpretation is stronger and why:** Both interpretations are proportionate to their scope, but the paired audit's mandatory-DPIA conclusion is stronger for the agreed production scenario because several EDPB high-risk criteria are already present rather than merely hypothetical.
 
 ### Joint conclusion — two to three sentences
 
-Pending completion of the partner swap. This section must reflect Gretel's actual review and must not be pre-filled as if the exchange already occurred.
+Both audits reached **proceed with conditions** and identified the transition from bounded public/demo evidence to private client documents as the central GDPR risk. Comparing them clarified that Gretel's conditional DPIA language is appropriate for the current MVP, while a full DPIA is the stronger requirement for our defined production scenario; we also agreed that minimisation, DPAs, transfer controls, data-subject rights, and auditable human review must be in place before real personal data is processed.
