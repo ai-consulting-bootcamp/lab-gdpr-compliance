@@ -1,23 +1,28 @@
-# Same product, privacy lens
+# MIRA — GDPR Privacy Audit
 
-**Track:** Module 7 — GDPR · **When:** Week 7, Day 3 · **Status:** Required
+This repository contains Marija Kavaliauskaite's Ironhack Week 7 mandatory lab, **“LAB | Same product, privacy lens.”** It is an educational GDPR consulting audit, not formal legal advice.
 
-This repository contains everything you need for this lab.
+## Scenario
 
-## Files
+MIRA is an AI Creative Director and remote editorial photography product. Its journey may collect a user's name and birth details, written business and creative responses, visual preferences, optional inspiration images, and an optional personal reference photograph. MIRA synthesises those inputs into an internal “Creative DNA” and generates a five-frame campaign or moodboard. AI/model and infrastructure providers may process some inputs, but their identities and contractual arrangements are not evidenced.
 
-- [`instructions.md`](./instructions.md) — the lab instructions
-- [`rubric.md`](./rubric.md) — how your submission is graded; this is what the AI reviewer checks your PR against
+## Previous AI Act context
 
-## How to complete this lab
+The preceding assessment generally treated MIRA as a limited-risk/transparency use rather than an Annex III high-risk system, subject to implementation details. That classification does not replace GDPR analysis: the AI Act and GDPR apply in parallel to different aspects of the product.
 
-1. **Fork** this repository.
-2. Do the work described in `instructions.md`, committing to your fork.
-3. Open a **pull request** back into this repository.
-4. You'll receive **AI feedback** on your PR based on `rubric.md`. Address any blocking feedback and push updates to the same PR.
+## Repository contents
 
-## Submission hygiene
+- [`gdpr-audit-pack.md`](gdpr-audit-pack.md) — fact pattern, data map, rights and risk analysis, law stacking, client memo, and conclusion.
+- [`peer-review.md`](peer-review.md) — the required blank partner-review rubric, client response, and debrief fields.
+- [`optional/dpia-outline.md`](optional/dpia-outline.md) — concise DPIA scoping outline and evidence gaps.
+- [`optional/privacy-by-design-checklist.md`](optional/privacy-by-design-checklist.md) — conservative control-status checklist.
 
-- Keep this repository scoped to this lab only — no unrelated projects or personal files.
-- Use clear, descriptive filenames.
-- Remove secrets, API keys, and tokens before committing.
+## Key conclusion
+
+**GO WITH CONDITIONS.** MIRA's creative use case does not appear to involve legally or similarly significant automated decisions, but launch should be conditional on a verified data map and lawful bases, vendor and transfer due diligence, a documented DPIA decision, and working access/deletion processes.
+
+## Peer-review status
+
+Peer-review scores, feedback, the client response, and the debrief are intentionally left open until the required partner swap and discussion take place. No partner feedback has been fabricated.
+
+Where evidence is unavailable, the deliverables use **“TBD — legal review.”**
