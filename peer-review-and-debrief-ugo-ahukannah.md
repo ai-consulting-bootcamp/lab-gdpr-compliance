@@ -86,10 +86,38 @@ Both audits were written independently against the same agreed fact pattern.
 | **Conformity assessment route** | "A conformity assessment before deployment" | Internal control under **Annex VI**; no notified body for Annex III(4) | **Mine** — the unqualified phrasing invites a client to procure a third-party assessment the Act does not require here. |
 | **ePrivacy** | Flagged, but "not the primary exposure" | Consent under Art 5(3) overrides GDPR flexibility for non-essential cookies | **Mine on the law, his on the priority.** He is right that it is not where the risk sits; I am right that it is not discretionary. Both belong in the memo. |
 | **Explainability as a residual risk** | Named as a standing operational and reputational problem | Treated mainly as an Art 15(1)(h) access-request duty | **His.** Framing it as "recruiters need enough visibility to give a real answer" is the more useful consulting output — mine described the legal duty without the operating consequence. Adopted. |
-| **Digital Omnibus interactions** | Not raised | Art 4a as the basis for bias testing on special-category data; Art 12 logging vs storage limitation | **Mine**, but this is coverage rather than a disagreement — the Art 4a point removes the obstacle his own bias-testing recommendation would otherwise hit. |
+| **Digital Omnibus status** | Believed it was still a Commission proposal, and challenged the Art 4a reliance on that basis | Treated it as amending law in force, and relied on Art 4a for bias testing; also raised Art 12 logging vs storage limitation | **Mine on the facts** — Regulation (EU) 2026/1744 was published in the OJ on 24 July 2026 and entered into force on 27 July 2026, so Art 4a is available; his reading matches the pre-adoption position, most likely the 7 May 2026 provisional agreement. **His on method**, which is why the challenge was still worth having: a mitigation should not rest on an instrument the reader cannot check, so every Omnibus claim now carries its instrument and in-force date inline. |
 
-**One process note for the debrief conversation.** Vittal's transition note records that the AI Act
-lab repository "was empty at the time of this lab", so he could not carry a tier forward under
-Option A and wrote a self-authored case instead. That is a consequence of our AI Act work not yet
-being pushed, not of anything he did — and it is worth saying so on the record, since his pack
-otherwise reads as though the prior lab produced nothing.
+**One process note.** Vittal's transition note records that the AI Act lab repository "was empty at
+the time of this lab", so he could not carry a tier forward under Option A and wrote a self-authored
+case instead. That was a consequence of the AI Act work being held locally until submission, not of
+anything he did. It has since been resolved — that lab is submitted, and the case did classify as
+high-risk under Annex III(4), approved with controls.
+
+## Closing note — what changed after the exchange
+
+**No finding was withdrawn and no score was contested.** Both memos were accepted by the other side
+as the client: mine 15/15 with one concern, his 14/15 with two. What the exchange changed falls into
+three categories, and only the first is about being wrong.
+
+**One correction to my own work, and it came from a challenge that was factually mistaken.** Vittal
+believed the Digital Omnibus was unadopted and asked that the bias-testing mitigation not rest on
+Article 4a. The premise was wrong — the Regulation has been in force since 27 July 2026 — but the
+underlying instinct was right: I had asserted a legal basis without giving the reader any way to
+check it. Every Omnibus-dependent claim in the pack now carries its instrument and in-force date
+inline, and the Art 4a reliance now states *why* it holds for this system specifically (the
+high-risk route via Art 10(2)(f) and (g), not the broader extension the EDPB asked to see
+circumscribed). A wrong challenge that produces a better document is still a good challenge.
+
+**One thing I take from his memo outright.** His framing of explainability as a standing operational
+problem — recruiters need enough visibility into the scoring rationale to give a real answer —
+is more useful than my treatment of it as an Art 15(1)(h) compliance duty. Same fact, better
+consulting. It is now the residual risk I would lead with.
+
+**One thing about process, which is the part I would carry into real engagements.** My first send
+put my scored review of his memo inside the same document I was asking him to review. He caught the
+consequence before I did — it anchors the reviewer and muddies what is being asked for. Resending as
+two clearly separated documents produced a review he could explicitly confirm was uncontaminated:
+*"no earlier mixed version reached me, so nothing anchored this read."* Independence in a review is
+a property of how the material is packaged, not of how carefully the reviewer behaves. One document,
+one audience, one moment.
