@@ -10,7 +10,7 @@ An HR-tech startup sells a recruitment tool that ranks job applicants using stru
 
 | File | Contents |
 |---|---|
-| `gdpr_audit_pack_cv_screening.md` | Fact pattern, transition note, Sections A–C of the mini GDPR audit, client recommendation memo, peer-review self-check, DPIA outline, and privacy-by-design checklist. |
+| `gdpr_audit_pack_cv_screening.md` | Fact pattern, GDPR and EU AI Act analysis, client recommendation memo, peer-review self-check, DPIA outline, privacy-by-design checklist, and disclosure that the partner swap was not completed. |
 
 ## Working assumptions
 

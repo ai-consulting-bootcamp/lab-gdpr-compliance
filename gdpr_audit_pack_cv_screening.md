@@ -115,7 +115,7 @@ The Data Act is **N/A on the current facts** because CV screening does not invol
 ## 6. Client recommendation memo
 
 **To:** TalentRank CEO, Product Lead, DPO, and Employment-Law Counsel  
-**From:** Parisa Dehghani
+**From:** Parisa Dehghani  
 **Subject:** GDPR and EU AI Act recommendation for CV-ranking tool
 
 ### Bottom line: go with conditions, not automatic deployment
@@ -136,7 +136,9 @@ Bias can remain even after protected fields are removed because education, addre
 
 ## 7. Phase 4 — Peer-review rubric
 
-No partner feedback was supplied, so this is a **self-review / mock client review**, not evidence of a completed partner swap.
+**Partner-swap status: Not completed / Not found**
+
+No partner swap or external peer review was completed for this submission. The scores below are my self-assessment only and are not partner feedback.
 
 | Criterion | Score 1–3 | Self-review comment |
 |---|---:|---|
@@ -148,17 +150,8 @@ No partner feedback was supplied, so this is a **self-review / mock client revie
 
 **Mock client response:** We accept the conditional pilot recommendation. Before testing on live applicants, we want proof that recruiters can override the model, that no automatic rejection is hidden in the workflow, and that the vendor contract prevents secondary training use of applicant data.
 
-## 8. Debrief — simulated peer comparison
 
-No live partner notes were available for this submission, so the comparison below is a **simulated peer debrief** based on the most likely review disagreements. It is included to demonstrate the debrief reasoning required by the lab.
-
-- **Agreement:** Both reviewers treated the CV-ranking tool as likely high-risk under the AI Act and agreed that a DPIA should be completed before deployment. Both also agreed that the employer is normally the controller for recruitment, TalentRank is normally a processor for the employer’s instructions, and recruiter review must be meaningful rather than a rubber stamp.
-- **Divergence on lawful basis:** Reviewer A considered legitimate interests potentially plausible for TalentRank’s own model-improvement purpose if the data were minimised, the purpose were transparent, and a documented LIA supported it. Reviewer B argued that the employer’s recruitment basis cannot automatically cover TalentRank’s separate product-improvement purpose and wanted legal review before relying on legitimate interests.
-- **Divergence on Article 22:** Reviewer A viewed Article 22 as less likely to apply where the recruiter can genuinely override the ranking. Reviewer B warned that Article 22 risk remains if the ranking silently excludes applicants or the recruiter routinely accepts the score without understanding or challenging it.
-- **Resolution:** The stricter reading is stronger for this scenario. Recruitment ranking can materially affect access to employment, and the secondary model-improvement purpose is not clearly covered by the employer’s recruitment basis. The project should therefore proceed only with a documented role/lawful-basis decision, a DPIA, no automatic rejection, and evidence that human oversight is real.
-- **What changed after the comparison:** The audit moved from treating “human review” as a general safeguard to requiring specific controls: recruiter access to evidence and uncertainty, independent override authority, override logging, no hidden automatic rejection, and a separate legal review for TalentRank’s own model-improvement purpose.
-
-## 9. DPIA outline
+## 8. DPIA outline
 
 - **Description:** applicant sources, CV fields, job descriptions, ranking logic, recruiter workflow, vendors, locations, retention, and model lifecycle.
 - **Necessity and proportionality:** why ranking is needed, whether a simpler rule-based shortlist is sufficient, data minimisation, applicant notice, and less intrusive alternatives.
@@ -166,7 +159,7 @@ No live partner notes were available for this submission, so the comparison belo
 - **Mitigations:** remove photographs and sensitive fields, proxy testing, representative validation data, confidence thresholds, human override, explanation/evidence display, logging, appeals, access controls, deletion, DPAs, transfer safeguards, and monitoring.
 - **Residual risk decision:** DPO, employment-law, and AI governance approval; supervisory consultation if high residual risk remains.
 
-## 10. Data-protection-by-design checklist
+## 9. Data-protection-by-design checklist
 
 | Control | Status | Recommended action |
 |---|---|---|
