@@ -21,3 +21,8 @@ This repository contains everything you need for this lab.
 - Keep this repository scoped to this lab only — no unrelated projects or personal files.
 - Use clear, descriptive filenames.
 - Remove secrets, API keys, and tokens before committing.
+
+## Sandra’s submission
+
+- [lab_proof.md](./lab_proof.md) — case, GDPR audit, client memo, peer feedback and local test evidence.
+- [cv_minimisation_demo.py](./cv_minimisation_demo.py) — local demonstration with fictional CV fields.
