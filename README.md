@@ -1,23 +1,19 @@
-# Same product, privacy lens
+# GDPR Audit Lab — Same product, privacy lens
 
-**Track:** Module 7 — GDPR · **When:** Week 7, Day 3 · **Status:** Required
+Ironhack AI Consulting & Integration bootcamp · Pieter Albrecht
 
-This repository contains everything you need for this lab.
+A mini GDPR audit and client recommendation memo for an AI CV-screening tool used by a logistics company hiring in Germany and Poland, with a US vendor. The case is carried forward from my partner's EU AI Act lab (Case 2, high-risk). The client and vendor are fictional; the legal analysis reflects EU law as of November 2026.
+
+**Start here:** [lab_proof.md](lab_proof.md)
 
 ## Files
 
-- [`instructions.md`](./instructions.md) — the lab instructions
-- [`rubric.md`](./rubric.md) — how your submission is graded; this is what the AI reviewer checks your PR against
-
-## How to complete this lab
-
-1. **Fork** this repository.
-2. Do the work described in `instructions.md`, committing to your fork.
-3. Open a **pull request** back into this repository.
-4. You'll receive **AI feedback** on your PR based on `rubric.md`. Address any blocking feedback and push updates to the same PR.
-
-## Submission hygiene
-
-- Keep this repository scoped to this lab only — no unrelated projects or personal files.
-- Use clear, descriptive filenames.
-- Remove secrets, API keys, and tokens before committing.
+| File | Contents |
+|---|---|
+| [lab_proof.md](lab_proof.md) | Entry point for the reviewer: workflow, one run (input → evidence → output), limitations, links |
+| [GDPR_Audit_Pack_Pieter_Albrecht.md](GDPR_Audit_Pack_Pieter_Albrecht.md) | Transition note from the AI Act lab, fact pattern, audit worksheet (Recognize, Section A data map, Section B risk & rights, Section C law stacking) and the client recommendation memo |
+| [reinforce_DPIA_outline_DPA_clause_UK.md](reinforce_DPIA_outline_DPA_clause_UK.md) | Reinforce tasks: DPIA outline, key DPA clause with the US vendor, bottom line rewritten for UK applicants |
+| [stretch_privacy_by_design_checklist.md](stretch_privacy_by_design_checklist.md) | Stretch task: data protection by design checklist (pass / fail / unknown) |
+| [peer_review_and_debrief.md](peer_review_and_debrief.md) | Peer-review rubric and debrief notes from the partner swap |
+| instructions.md | Lab instructions provided by Ironhack (template file) |
+| rubric.md | Peer-review rubric provided by Ironhack (template file) |
