@@ -8,6 +8,7 @@ This repository contains everything you need for this lab.
 
 - [`instructions.md`](./instructions.md) — the lab instructions
 - [`rubric.md`](./rubric.md) — how your submission is graded; this is what the AI reviewer checks your PR against
+- [`gdpr-audit-pack-stylenest-personalisation-barsha.md`](./gdpr-audit-pack-stylenest-personalisation-barsha.md) — my GDPR Audit Pack (Option B c: e-commerce personalisation): fact pattern, audit worksheet (Sections A–C), client recommendation memo, partner peer review, response to client, joint debrief, DPIA outline and privacy-by-design checklist
 
 ## How to complete this lab
 
