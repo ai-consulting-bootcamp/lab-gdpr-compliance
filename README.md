@@ -21,3 +21,13 @@ This repository contains everything you need for this lab.
 - Keep this repository scoped to this lab only — no unrelated projects or personal files.
 - Use clear, descriptive filenames.
 - Remove secrets, API keys, and tokens before committing.
+
+# GDPR Audit Pack – Same product, privacy lens
+
+**Author:** Elif Yurdakul · **Partner:** Pieter
+**Scenario:** Option A, carried forward from the EU AI Act lab: Pieter's Case 2, an online lender using an AI credit-scoring model on open-banking data (AI Act: high-risk, Annex III 5(b)).
+
+| File | Contents |
+|---|---|
+| `lab_proof.md` | Entry point: transition note, fact pattern, audit worksheet (data map, risk and rights, law stacking), client recommendation memo, partner review, DPIA outline, DPA clause, UK note, data protection by design checklist |
+| `README.md` | This file map |
