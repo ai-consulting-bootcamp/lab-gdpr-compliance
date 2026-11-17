@@ -21,3 +21,18 @@ This repository contains everything you need for this lab.
 - Keep this repository scoped to this lab only — no unrelated projects or personal files.
 - Use clear, descriptive filenames.
 - Remove secrets, API keys, and tokens before committing.
+
+## Lab submission
+
+Start with [lab_proof.md](lab_proof.md). This repository is scoped to the GDPR lab and uses no real applicant records.
+
+| File | Contents |
+| --- | --- |
+| [README.md](README.md) | Repository scope and file index. |
+| [lab_proof.md](lab_proof.md) | Reviewer entry point, reproducible run, observed evidence, final recommendation and limitation. |
+| [gdpr-audit-pack-sean-langsdorf.md](gdpr-audit-pack-sean-langsdorf.md) | AI Act transition, scenario, audit worksheet A–C, client memo and primary sources. |
+| [shortlist-review-check.py](shortlist-review-check.py) | Offline Python check for missing or late synthetic pre-close reviews. |
+| [synthetic-shortlist-input.json](synthetic-shortlist-input.json) | Input with one timely, one missing and one late review for a fictional vacancy. |
+| [synthetic-shortlist-evidence.json](synthetic-shortlist-evidence.json) | Captured output from the synthetic run. |
+| [peer-review-rubric.md](peer-review-rubric.md) | Ready-to-use partner review and debrief, with actual feedback still pending. |
+| [design-safeguards.md](design-safeguards.md) | Optional DPIA outline, DPA clause, UK variation and design checklist. |

@@ -1,0 +1,18 @@
+{
+  "case": "warehouse-shift-closes-before-full-review",
+  "vacancy": "DEMO-WH-01",
+  "reviewed_before_close": [
+    "DEMO-A01"
+  ],
+  "blocked_applications": {
+    "DEMO-A02": [
+      "NO_REVIEWER",
+      "NO_REVIEW_REASON",
+      "NO_REVIEW_TIMESTAMP"
+    ],
+    "DEMO-A03": [
+      "REVIEW_NOT_BEFORE_CLOSE"
+    ]
+  },
+  "result": "BLOCK_AI_SHORTLIST"
+}
