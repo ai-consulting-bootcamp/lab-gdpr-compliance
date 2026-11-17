@@ -1,23 +1,13 @@
-# Same product, privacy lens
+# LAB | Same product, privacy lens: GDPR audit of Case B
 
-**Track:** Module 7 — GDPR · **When:** Week 7, Day 3 · **Status:** Required
+GDPR audit of Case B (contact-centre "wellbeing assistant") from Friedrich's client briefs, carried forward from the EU AI Act lab. Partner: Friedrich.
 
-This repository contains everything you need for this lab.
+**Reviewer entry point: [`lab_proof.md`](lab_proof.md)**
 
-## Files
-
-- [`instructions.md`](./instructions.md) — the lab instructions
-- [`rubric.md`](./rubric.md) — how your submission is graded; this is what the AI reviewer checks your PR against
-
-## How to complete this lab
-
-1. **Fork** this repository.
-2. Do the work described in `instructions.md`, committing to your fork.
-3. Open a **pull request** back into this repository.
-4. You'll receive **AI feedback** on your PR based on `rubric.md`. Address any blocking feedback and push updates to the same PR.
-
-## Submission hygiene
-
-- Keep this repository scoped to this lab only — no unrelated projects or personal files.
-- Use clear, descriptive filenames.
-- Remove secrets, API keys, and tokens before committing.
+| File | What it contains |
+|---|---|
+| [`lab_proof.md`](lab_proof.md) | Entry point: input, evidence, output, limitation, open steps |
+| [`GDPR_Audit_Pack_Nicolo_Marseu.md`](GDPR_Audit_Pack_Nicolo_Marseu.md) | Full working document: transition note, fact pattern, CFU 1, audit worksheet (Sections A–C), client recommendation memo |
+| [`case_b_fact_pattern_shared_with_friedrich.md`](case_b_fact_pattern_shared_with_friedrich.md) | The fact pattern shared with my partner as common ground |
+| [`case_b_client_recommendation_memo_for_swap.md`](case_b_client_recommendation_memo_for_swap.md) | Stand-alone copy of the memo for the Phase 4 peer swap |
+| [`phase4_peer_review_and_swap.md`](phase4_peer_review_and_swap.md) | Phase 4: Friedrich's client response to my memo (accepted unchanged) |
