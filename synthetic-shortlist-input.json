@@ -1,0 +1,28 @@
+{
+  "synthetic_case": "warehouse-shift-closes-before-full-review",
+  "vacancy": "DEMO-WH-01",
+  "shortlist_closed_at": "2026-11-17T10:00:00Z",
+  "applications": [
+    {
+      "token": "DEMO-A01",
+      "eligible": true,
+      "ai_rank": 1,
+      "review": {
+        "reviewer_id": "DEMO-R1",
+        "at": "2026-11-17T09:58:00Z",
+        "reason": "Checked required certificate and confirmed shift availability."
+      }
+    },
+    {"token": "DEMO-A02", "eligible": true, "ai_rank": 2, "review": null},
+    {
+      "token": "DEMO-A03",
+      "eligible": true,
+      "ai_rank": 3,
+      "review": {
+        "reviewer_id": "DEMO-R1",
+        "at": "2026-11-17T10:01:00Z",
+        "reason": "Checked equivalent certificate and shift availability."
+      }
+    }
+  ]
+}
