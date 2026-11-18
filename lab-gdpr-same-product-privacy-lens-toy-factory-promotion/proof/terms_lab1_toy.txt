@@ -1,0 +1,11 @@
+production and QC records|production and quality-control records
+units assembled|units assembled
+defects attributed|defects
+individual score|individual score
+promotion recommendation|recommend workers for promotion
+human supervisor decides|supervisor could inspect
+workers are data subjects|Workers are the affected data subjects
+EU/EEA assumption stated|assumes an EU/EEA workplace
+vendor named|\b(OpenAI|Microsoft|Google|AWS|Azure)\b
+retention period stated|\b\d+\s*(months|years|days)\b
+workers' devices / terminal equipment|device|phone|tablet|wearable

@@ -1,0 +1,17 @@
+# Client recommendation memo — Smart-toy factory: worker scoring and promotion
+
+*As sent to Sandra Obregón for the swap (Phase 4). Text unchanged, except that the From line now gives the author's name. Memo body: 383 words (limit 300–400), checked with `wc -w`.*
+
+**To:** Head of People / Legal Counsel · **From:** Jaime Garate Marquerie, independent AI & privacy consultant
+
+Bottom line — Proceed with conditions only. The proposal uses identifiable workers’ productivity and quality records to score performance and influence promotion opportunities. It therefore involves personal data and employment profiling. The human supervisor’s final say is useful, but it does not by itself establish lawful or fair processing. Deployment and controls remain unverified.
+
+**Legal basis and fairness.** The toy manufacturer would normally be the GDPR controller. A third-party AI supplier may act as processor, depending on its actual purposes and contract. Before processing, the controller must identify and document an Article 6 lawful basis for each purpose. Legitimate interests (Article 6(1)(f)) might be considered only after a documented necessity and balancing assessment, including the employer–worker power imbalance and applicable national labour rules. Consent should not be assumed freely given in this context. Performance records collected for production management must not automatically be reused for promotion scoring without checking purpose compatibility and informing workers.
+
+**DPIA and decision rights.** A data protection impact assessment is strongly indicated before live use: the proposal scores employees, affects career prospects, and uses AI to assess workers in a dependent relationship. The employer must assess the EDPB criteria and local supervisory-authority requirements. Article 22 needs closer examination if recommendations are followed automatically in practice or human review is merely nominal; real review means that the supervisor understands the evidence, can reject the recommendation and records an independent reason. Nothing in the case establishes that Article 9 special-category data are processed, although indirect inferences and unfair proxies deserve testing.
+
+**Three actions before launch.** First, establish a lawful basis and purpose-specific data inventory, provide clear employee information, and check labour-law consultation requirements. Second, conduct the DPIA, test scoring for bias and error, and design documented, meaningful human review with a route to challenge outcomes. Third, confirm each vendor’s role, any Article 28 DPA, hosting and transfers outside the EEA, security controls and a defensible retention schedule.
+
+**Residual risks.** Even after these measures, defects may reflect equipment or shift conditions rather than individual ability; opaque scores can create bias or discourage workers from raising concerns; and staff may perceive disproportionate surveillance. Separately, promotion and performance evaluation engage the AI Act high-risk framework (Annex III, 4(b)). This is a preliminary consulting memo, not a legal opinion, a completed DPIA or a compliance certification.
+
+Source facts: agreed revised Case 2 (worker scoring and promotion in a toy factory, replacing the earlier motorised-toy scenario); legal references: GDPR Articles 5, 6, 13–14, 22, 28, 35 and AI Act Annex III 4(b). Missing facts are marked, not assumed.
