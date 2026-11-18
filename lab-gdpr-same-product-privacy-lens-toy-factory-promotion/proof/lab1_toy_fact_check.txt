@@ -1,0 +1,12 @@
+chars_in_scope 802 words_in_scope 116
+FOUND     production and QC records (1)
+FOUND     units assembled (1)
+FOUND     defects attributed (1)
+FOUND     individual score (1)
+FOUND     promotion recommendation (1)
+FOUND     human supervisor decides (1)
+FOUND     workers are data subjects (1)
+FOUND     EU/EEA assumption stated (1)
+NOT FOUND vendor named (0)
+NOT FOUND retention period stated (0)
+NOT FOUND workers' devices / terminal equipment (0)
