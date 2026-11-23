@@ -1,23 +1,9 @@
-# Same product, privacy lens
+# GDPR lab: Same product, privacy lens
 
-**Track:** Module 7 — GDPR · **When:** Week 7, Day 3 · **Status:** Required
-
-This repository contains everything you need for this lab.
+Friedrich Tschoepke · Partner: Nicolò Marseu · Scenario: Option A, the **Application Prep Agent** (Nicolò's Project 3), carried forward from the EU AI Act peer audit.
 
 ## Files
 
-- [`instructions.md`](./instructions.md) — the lab instructions
-- [`rubric.md`](./rubric.md) — how your submission is graded; this is what the AI reviewer checks your PR against
-
-## How to complete this lab
-
-1. **Fork** this repository.
-2. Do the work described in `instructions.md`, committing to your fork.
-3. Open a **pull request** back into this repository.
-4. You'll receive **AI feedback** on your PR based on `rubric.md`. Address any blocking feedback and push updates to the same PR.
-
-## Submission hygiene
-
-- Keep this repository scoped to this lab only — no unrelated projects or personal files.
-- Use clear, descriptive filenames.
-- Remove secrets, API keys, and tokens before committing.
+| File | Contents |
+|---|---|
+| `GDPR_Audit_Pack_Friedrich_Tschoepke.md` | Transition note and fact pattern; Part 1 audit worksheet (Section A data map, Section B risk and rights incl. DPIA criteria, Section C law stacking); Part 2 client recommendation memo; Part 3 peer review and debrief; Part 4 DPIA outline, DPA clause, UK note and data protection by design checklist. |
