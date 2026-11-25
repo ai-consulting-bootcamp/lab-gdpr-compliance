@@ -1,0 +1,2 @@
+- `lab_proof.md` — Entry point linking the workflow export, test input and run, evidence, final output, and one limitation.
+- `gdpr-audit-pack-roodabeh.md` — Fact pattern, GDPR audit worksheet, and client recommendation memo.
